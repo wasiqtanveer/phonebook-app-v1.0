@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook App</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>PHONEBOOK</h1>
+        <i class="fas fa-phone"></i>
+    </nav>
+
+    <main>
+        <section id="Add-information">
+            <form  >
+            <h1>Add New Contact</h1>
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+            <button id="add-contact">Add Contact</button>
+            </form>
+        </section>
+
+
+        <section id="Display-information" class="Display-information">
+            <div class="contact-card">
+               <div class="name">
+                <h2>Name</h2>
+               </div> 
+
+               <div class="information">
+                <div class="info">
+                <p>Contact</p>
+                <p>mail@example.com</p>
+               </div>
+               <div class="icons">
+                <i class="fas fa-trash trash" id="delete" ></i>
+
+               </div>
+               </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 PhoneBook App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* adding colors in varible for better access later */
+:root
+{
+    --primary-color: #08CB00;
+    --secondary-color: #253900;
+    --tertiary-color : #000000;
+    --optional-color: #EEEEEE;
+}
+
+/* resetting default styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+body
+{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+/* styling Navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    gap: 1em;
+}
+
+/* Adjusting the size of phone logo */
+nav i
+{
+    font-size: 1.3em;
+}
+
+main
+{
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    display: flex;
+    background-color: #1a2702d2;
+    color: var(--primary-color);
+    gap: 1em;
+    height: 85vh;
+}
+
+#Add-information
+{
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    font-weight: 500;
+}
+
+#Add-information input
+{
+    min-width: 50%;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+}
+#Add-information input::placeholder
+{
+    color: #00000077;
+}
+
+#Add-information input:focus
+{
+    border: 1px solid var(--tertiary-color);
+    outline: transparent;
+}
+#Add-information button
+{
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+
+    &:hover
+    {
+        transform: scale(1.05);
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        cursor: pointer;
+    }
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+#Display-information
+{
+    flex: 2;
+    background-color: var(--secondary-color);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: auto;
+}
+
+/* styling contact card */
+.contact-card
+{
+    background-color:  #1a2702d2;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-card .name
+{
+    font-size: 1.3em;
+}
+
+.information
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons
+{
+    display: flex;
+    gap: 1em;
+
+}
+
+.icons i
+{
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+}
+.info
+{
+    display: flex;
+    gap: 1em;
+}
+
+
+.contact-card .information
+{
+
+    display: flex;
+    gap: 1em;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+}
