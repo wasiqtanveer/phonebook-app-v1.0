@@ -29,6 +29,7 @@ addContactButton.addEventListener("click", function(e) {
         </div>
         <div class="icons">
           <i class="fas fa-trash" id="delete"></i>
+          <i class="fas fa-edit" id="edit"></i>
 
         </div>
       </div>
@@ -38,6 +39,21 @@ addContactButton.addEventListener("click", function(e) {
     let deleteContact = newContact.querySelector("#delete");
     deleteContact.addEventListener("click" , function() {
     newContact.remove()
+})
+
+let editContact = newContact.querySelector("#edit");
+// adding event listener for editContact
+editContact.addEventListener("click",function()
+{
+  //takes information of the contact and takes it back to the form
+  // any changes there will reflect in the contact
+  name.value = newContact.querySelector(".name h2").textContent;
+  phone.value = newContact.querySelector(".info p:nth-child(1)").textContent;
+  email.value = newContact.querySelector(".info p:nth-child(2)").textContent;
+
+  newContact.remove()// removes the old contact card
+  name.focus()// takes the focus to the name field
+
 })
 
 
