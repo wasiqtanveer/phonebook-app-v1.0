@@ -50,6 +50,7 @@ editContact.addEventListener("click",function()
   name.value = newContact.querySelector(".name h2").textContent;
   phone.value = newContact.querySelector(".info p:nth-child(1)").textContent;
   email.value = newContact.querySelector(".info p:nth-child(2)").textContent;
+  addContactButton.textContent = "Update Contact"; // change button text to Update Contact
 
   newContact.remove()// removes the old contact card
   name.focus()// takes the focus to the name field
@@ -63,5 +64,6 @@ editContact.addEventListener("click",function()
     name.value = "";
     phone.value = "";
     email.value = "";
+    addContactButton.textContent = "Add Contact"; // reset button text
 }});
 
