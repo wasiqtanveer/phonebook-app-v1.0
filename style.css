@@ -133,6 +133,13 @@ form
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover
+    {
+        transform: scale(1.02);
+        background-color:  var(--tertiary-color);
+    }
 }
 
 .contact-card .name
